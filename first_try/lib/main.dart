@@ -27,12 +27,16 @@ class LoginScreen  extends StatelessWidget {
           // to get content to  center
           children: <Widget>[
             Text('sample login'),
-            Column(
+            Padding(
+              padding: EdgeInsets.all(30),
+            
+            child:Column(
               children: <Widget>[
                 TextField(),
+                 TextField(),
               ],
             ),
-            TextField(),
+            ),
             RaisedButton(
               child: Text('Login'),
               onPressed: ()=>print('login pressed'),
