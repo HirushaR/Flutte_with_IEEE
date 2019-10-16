@@ -17,11 +17,26 @@ class LoginScreen  extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Login from iEEE'),
+        backgroundColor: Colors.red,
+        
       ),
       body: Center(
         child: Column(
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.center,
+          // to get content to  center
           children: <Widget>[
-            Text('sample login')
+            Text('sample login'),
+            Column(
+              children: <Widget>[
+                TextField(),
+              ],
+            ),
+            TextField(),
+            RaisedButton(
+              child: Text('Login'),
+              onPressed: ()=>print('login pressed'),
+            )
           ],
         ),
       ),
