@@ -15,6 +15,8 @@ class LoginScreen  extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      //side nav bar created
+      drawer: Text('menu'),
       appBar: AppBar(
         title: Text('Login from iEEE'),
         backgroundColor: Colors.red,
@@ -29,17 +31,23 @@ class LoginScreen  extends StatelessWidget {
             Text('sample login'),
             Padding(
               padding: EdgeInsets.all(30),
-            
             child:Column(
               children: <Widget>[
+                // textField is input type
                 TextField(),
                  TextField(),
               ],
             ),
             ),
             RaisedButton(
+              //raisedbutton is a button
               child: Text('Login'),
               onPressed: ()=>print('login pressed'),
+              color: Colors.red,
+            ),
+            RaisedButton(
+              child: Text('SignUp'),
+              onPressed: ()=>print('sign pressed'),
             )
           ],
         ),
